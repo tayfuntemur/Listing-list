@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ürün Listesi</title>
+        <link rel="stylesheet" href="urunlistesi.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ürün Listesi</h1>
+            <div class="sort-options">
+                <label for="sort-by">Sırala:</label>
+                <select id="sort-by">
+                    <option value="price">Fiyata Göre</option>
+                    <option value="name">İsme Göre</option>
+                </select>
+                <button onclick="sortProducts()">Sırala</button>
+            </div>
+            <ul id="product-list"></ul>
+        </div>
+        <script src="urunlistesi.js"></script>
+    </body>
+</html>
